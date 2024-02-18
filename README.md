@@ -16,3 +16,8 @@ make
 ./hercules.elf
 ```
 
+### How to use:
+```
+./hercules.elf
+proxychains ...
+```
