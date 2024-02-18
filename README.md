@@ -9,7 +9,7 @@ It changes your tor proxies automaticly every 5 seconds,
 ### Installation:
 ```
 apt update
-apt install gcc -y
+apt install gcc tor -y
 git clone https://github.com/RussianHzcker/Hercules.git
 cd Hercules
 make
