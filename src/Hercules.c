@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#define DELAY 5 // Change this if you want to
+#define DELAY 20 // Change this if you want to
 #define TOR_SERVICE_FILE "/usr/lib/systemd/system/tor.service"
 #define BUFFER 1024
 
