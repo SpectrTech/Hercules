@@ -5,6 +5,8 @@
 Hercules is a tool to hide your identity online.
 It changes your tor proxies automaticly every 5 seconds,
 (you can change that in the source code. #define DELAY ...)
+To hide your identity you will need to use the proxy running
+on socks4://127.0.0.1:9050
 
 ### Installation:
 ```
