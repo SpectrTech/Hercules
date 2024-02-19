@@ -27,3 +27,4 @@ make
 ./hercules.elf
 proxychains ...
 ```
+Copyright (c) RussianHzcker 2024
