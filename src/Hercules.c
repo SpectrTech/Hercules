@@ -13,7 +13,7 @@ int banner(void) {
     printf("\\    Y    /\\  ___/|  | \\/\\  \\___|  |  /  |_\\  ___/ \\___ \\ \n");
     printf(" \\___|_  /  \\___  >__|    \\___  >____/|____/\\___  >____  >\n");
     printf("       \\/       \\/            \\/                \\/     \\/\n");
-    printf(" Version 0.0.2b\n\n");
+    printf(" Version 0.0.2b by $pectr4\n\n");
     return 0;
 }
 
