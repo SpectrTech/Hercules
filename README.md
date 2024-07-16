@@ -27,4 +27,7 @@ make
 ./hercules.elf
 proxychains ...
 ```
-Copyright (c) RussianHzcker 2024
+
+INFO: I changed my name from Russian.Hzcker to $pectr4.
+
+Copyright (c) $pectr4 2024
