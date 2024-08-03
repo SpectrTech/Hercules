@@ -19,6 +19,4 @@ make
 ./hercules.elf
 ```
 
-INFO: I changed my name from Russian.Hzcker to $pectr4.
-
 Copyright (c) $pectr4 2024
