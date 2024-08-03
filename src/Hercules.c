@@ -13,12 +13,14 @@ int banner(void) {
     printf("\\    Y    /\\  ___/|  | \\/\\  \\___|  |  /  |_\\  ___/ \\___ \\ \n");
     printf(" \\___|_  /  \\___  >__|    \\___  >____/|____/\\___  >____  >\n");
     printf("       \\/       \\/            \\/                \\/     \\/\n");
-    printf(" Version 0.0.2b by $pectr4\n\n");
+    printf(" Version 0.0.3b by $pectr4\n\n");
     return 0;
 }
 
 int main(int argc, char* argv[]) {
     banner();
+
+    int res;
 
     const char* service_name = "tor.service";
     if (access(TOR_SERVICE_FILE, F_OK) == 0) {
@@ -38,12 +40,23 @@ int main(int argc, char* argv[]) {
     } else {
         printf("[!] Tor.service is not running!\n");
         printf("[*] Starting tor.service ...\n");
-        system("systemctl start tor.service --now");
+        res = system("systemctl start tor.service --now");
+        if (res != 0) {
+            printf("[-] Something went wrong while starting tor.service! Please try starting it manually.\n");
+            system("systemctl status tor.service");
+            return 1;
+        }
     }
 
     while (1 == 1) {
         printf("[*] Changing tor proxies ...\n");
-        system("systemctl restart tor.service --now");
+        res = system("systemctl restart tor.service --now");
+        if (res != 0) {
+            printf("[-] Something went wrong while restarting tor.service!\n");
+            system("systemctl status tor.service");
+            return 1;
+        }
+        
         printf("[*] Tor proxies successfully changed!\n");
         sleep(DELAY);
     }
