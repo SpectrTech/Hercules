@@ -17,7 +17,6 @@ make
 ### How to use:
 ```
 ./hercules.elf
-proxychains ...
 ```
 
 INFO: I changed my name from Russian.Hzcker to $pectr4.
