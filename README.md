@@ -5,9 +5,8 @@
 Tor IP switching automization
 
 ### Installation:
+Make sure you have gcc and tor service installed before running these.
 ```
-apt update
-apt install gcc tor -y
 git clone https://github.com/RussianHzcker/Hercules.git
 cd Hercules
 make
