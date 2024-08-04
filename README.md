@@ -1,4 +1,4 @@
-## Hercules - Toolkit v0.0.2b
+## Hercules - Toolkit v0.0.3
 
 **DISCLAIMER**: This tool is for educational purposes **ONLY**. (Read the LICENSE)
 
