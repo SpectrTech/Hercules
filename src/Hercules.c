@@ -13,7 +13,7 @@ int banner(void) {
     printf("\\    Y    /\\  ___/|  | \\/\\  \\___|  |  /  |_\\  ___/ \\___ \\ \n");
     printf(" \\___|_  /  \\___  >__|    \\___  >____/|____/\\___  >____  >\n");
     printf("       \\/       \\/            \\/                \\/     \\/\n");
-    printf(" Version 0.0.3b by $pectr4\n\n");
+    printf(" Version 0.0.3 by $pectr4\n\n");
     return 0;
 }
 
@@ -34,12 +34,13 @@ int main(int argc, char* argv[]) {
     
     char command[BUFFER];
     snprintf(command, sizeof(command), "systemctl is-active %s", service_name);
+    
     int status = system(command);
     if (status == 0) {
         printf("[+] Tor.service is running!\n");
-    } else {
-        printf("[!] Tor.service is not running!\n");
-        printf("[*] Starting tor.service ...\n");
+    }
+    else {
+        printf("[!] Tor.service is not running!\n[*] Starting tor.service ...\n");
         res = system("systemctl start tor.service --now");
         if (res != 0) {
             printf("[-] Something went wrong while starting tor.service! Please try starting it manually.\n");
@@ -48,7 +49,7 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    while (1 == 1) {
+    while (1) {
         printf("[*] Changing tor proxies ...\n");
         res = system("systemctl restart tor.service --now");
         if (res != 0) {
