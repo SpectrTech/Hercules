@@ -1,3 +1,2 @@
 main:
-	gcc src/Hercules.c -o hercules.elf
-	bash src/disclaimer.sh
+	gcc src/main.c -o hercules.elf
