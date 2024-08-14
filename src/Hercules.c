@@ -13,7 +13,7 @@ int banner(void) {
     printf("\\    Y    /\\  ___/|  | \\/\\  \\___|  |  /  |_\\  ___/ \\___ \\ \n");
     printf(" \\___|_  /  \\___  >__|    \\___  >____/|____/\\___  >____  >\n");
     printf("       \\/       \\/            \\/                \\/     \\/\n");
-    printf(" Version 0.0.3 by $pectr4\n\n");
+    printf(" Version 0.0.4 by $pectr4\n\n");
     return 0;
 }
 
@@ -58,7 +58,7 @@ int main(int argc, char* argv[]) {
             return 1;
         }
         
-        printf("[*] Tor proxies successfully changed!\n");
+        printf("[+] Tor proxies successfully changed!\n");
         sleep(DELAY);
     }
     return 0;
